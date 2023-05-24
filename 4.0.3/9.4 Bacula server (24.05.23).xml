@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.0</version>
-    <date>2023-05-22T21:48:48Z</date>
+    <date>2023-05-24T15:58:01Z</date>
     <groups>
         <group>
             <name>9. Сервисы и службы</name>
@@ -10,7 +10,7 @@
     <templates>
         <template>
             <template>9.4 Bacula server</template>
-            <name>9.4 Bacula server 23.05.23</name>
+            <name>9.4 Bacula server (24.05.23)</name>
             <description/>
             <groups>
                 <group>
@@ -22,193 +22,15 @@
                     <name>Bacula</name>
                 </application>
             </applications>
-            <items>
-                <item>
-                    <name>Bacula Database (number of processes)</name>
-                    <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
-                    <key>proc.num[{$BACULA.DB}]</key>
-                    <delay>1h</delay>
-                    <history>90d</history>
-                    <trends>365d</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Bacula</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
-                    <status_codes>200</status_codes>
-                    <follow_redirects>1</follow_redirects>
-                    <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
-                    <retrieve_mode>0</retrieve_mode>
-                    <request_method>0</request_method>
-                    <output_format>0</output_format>
-                    <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
-                    <verify_peer>0</verify_peer>
-                    <verify_host>0</verify_host>
-                    <master_item/>
-                </item>
-                <item>
-                    <name>Bacula Director (number of processes)</name>
-                    <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
-                    <key>proc.num[{$BACULA.DIR}]</key>
-                    <delay>1h</delay>
-                    <history>90d</history>
-                    <trends>365d</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Bacula</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
-                    <status_codes>200</status_codes>
-                    <follow_redirects>1</follow_redirects>
-                    <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
-                    <retrieve_mode>0</retrieve_mode>
-                    <request_method>0</request_method>
-                    <output_format>0</output_format>
-                    <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
-                    <verify_peer>0</verify_peer>
-                    <verify_host>0</verify_host>
-                    <master_item/>
-                </item>
-                <item>
-                    <name>Bacula Storage (number of processes)</name>
-                    <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
-                    <key>proc.num[{$BACULA.SD}]</key>
-                    <delay>1h</delay>
-                    <history>90d</history>
-                    <trends>365d</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Bacula</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
-                    <status_codes>200</status_codes>
-                    <follow_redirects>1</follow_redirects>
-                    <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
-                    <retrieve_mode>0</retrieve_mode>
-                    <request_method>0</request_method>
-                    <output_format>0</output_format>
-                    <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
-                    <verify_peer>0</verify_peer>
-                    <verify_host>0</verify_host>
-                    <master_item/>
-                </item>
-            </items>
+            <items/>
             <discovery_rules>
                 <discovery_rule>
                     <name>Bacula Jobs</name>
-                    <type>0</type>
+                    <type>7</type>
                     <snmp_community/>
                     <snmp_oid/>
                     <key>bacula.discovery</key>
-                    <delay>1d</delay>
+                    <delay>3h</delay>
                     <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
@@ -236,7 +58,7 @@
                     <item_prototypes>
                         <item_prototype>
                             <name>Bacula Job {#JOB} Duration DIFFERENTIAL</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <snmp_oid/>
                             <key>bacula.check[{#JOB},duration,D]</key>
@@ -296,7 +118,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>Bacula Job {#JOB} Duration FULL</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <snmp_oid/>
                             <key>bacula.check[{#JOB},duration,F]</key>
@@ -356,7 +178,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>Bacula Job {#JOB} Duration INCREMENTAL</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <snmp_oid/>
                             <key>bacula.check[{#JOB},duration,I]</key>
@@ -416,7 +238,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>Bacula Job {#JOB} Bytes DIFFERENTIAL</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <snmp_oid/>
                             <key>bacula.check[{#JOB},jobbytes,D]</key>
@@ -476,7 +298,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>Bacula Job {#JOB} Bytes FULL</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <snmp_oid/>
                             <key>bacula.check[{#JOB},jobbytes,F]</key>
@@ -536,7 +358,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>Bacula Job {#JOB} Bytes INCREMENTAL</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <snmp_oid/>
                             <key>bacula.check[{#JOB},jobbytes,I]</key>
@@ -596,7 +418,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>Bacula Job {#JOB} Files DIFFERENTIAL</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <snmp_oid/>
                             <key>bacula.check[{#JOB},jobfiles,D]</key>
@@ -656,7 +478,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>Bacula Job {#JOB} Files FULL</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <snmp_oid/>
                             <key>bacula.check[{#JOB},jobfiles,F]</key>
@@ -716,7 +538,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>Bacula Job {#JOB} Files INCREMENTAL</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <snmp_oid/>
                             <key>bacula.check[{#JOB},jobfiles,I]</key>
@@ -776,12 +598,12 @@
                         </item_prototype>
                         <item_prototype>
                             <name>Bacula Job {#JOB} Status</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <snmp_oid/>
                             <key>bacula.check[{#JOB},jobstatus]</key>
-                            <delay>1h</delay>
-                            <history>30d</history>
+                            <delay>15m</delay>
+                            <history>90d</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>1</value_type>
@@ -838,17 +660,17 @@
                         </item_prototype>
                         <item_prototype>
                             <name>Bacula Job {#JOB} Last Execution</name>
-                            <type>0</type>
+                            <type>7</type>
                             <snmp_community/>
                             <snmp_oid/>
                             <key>bacula.check[{#JOB},lastexecution]</key>
-                            <delay>1h</delay>
-                            <history>30d</history>
+                            <delay>15m</delay>
+                            <history>90d</history>
                             <trends>365d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
-                            <units/>
+                            <units>s</units>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1179,56 +1001,6 @@
             <screens/>
         </template>
     </templates>
-    <triggers>
-        <trigger>
-            <expression>{9.4 Bacula server:proc.num[{$BACULA.DB}].last()}=0</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
-            <name>Bacula Database is DOWN in {HOST.NAME}</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
-            <url/>
-            <status>0</status>
-            <priority>5</priority>
-            <description/>
-            <type>0</type>
-            <manual_close>0</manual_close>
-            <dependencies/>
-            <tags/>
-        </trigger>
-        <trigger>
-            <expression>{9.4 Bacula server:proc.num[{$BACULA.DIR}].last()}=0</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
-            <name>Bacula Director is DOWN in {HOST.NAME}</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
-            <url/>
-            <status>0</status>
-            <priority>5</priority>
-            <description/>
-            <type>0</type>
-            <manual_close>0</manual_close>
-            <dependencies/>
-            <tags/>
-        </trigger>
-        <trigger>
-            <expression>{9.4 Bacula server:proc.num[{$BACULA.SD}].last()}=0</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
-            <name>Bacula Storage is DOWN in {HOST.NAME}</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
-            <url/>
-            <status>0</status>
-            <priority>5</priority>
-            <description/>
-            <type>0</type>
-            <manual_close>0</manual_close>
-            <dependencies/>
-            <tags/>
-        </trigger>
-    </triggers>
     <value_maps>
         <value_map>
             <name>Bacula Job status</name>
@@ -1326,12 +1098,12 @@
                     <newvalue>Задание ожидает Storage daemon</newvalue>
                 </mapping>
                 <mapping>
-                    <value>t</value>
-                    <newvalue>Waiting for start time</newvalue>
-                </mapping>
-                <mapping>
                     <value>T</value>
                     <newvalue>Задание завершено нормально</newvalue>
+                </mapping>
+                <mapping>
+                    <value>t</value>
+                    <newvalue>Waiting for start time</newvalue>
                 </mapping>
                 <mapping>
                     <value>W</value>
