@@ -2,9 +2,10 @@
 * ***2.2 IPMI_HPDL360G10*** - мониторинг сервера HPE DL360 Gen10.
 * ***2.3 IPMI_HPDL380G10*** - мониторинг сервера HPE DL380 Gen10.
 * ***2.4 NVidia GPUs*** - мониторинг GPU Nvidia.
-* ***2.5 SNMP_Lenovo*** - мониториинг сервера Lenovo
+* ***2.5 SNMPv3_Lenovo*** - мониториинг сервера Lenovo
 * ***3.2 SNMP_Brocade FC*** - мониториинг FibreChannel коммутатора Brokade.
 * ***3.3 IBM Storwize V7000*** - мониториинг СХД IBM
+* ***4.1 ICMP_Ping*** - мониториинг PING-а хоста
 * ***4.2 SNMP_HPE Switch*** - мониториинг коммутатора HPE 1920.
 * ***4.3 SNMP_HPE FF 5710 HH3C*** - мониториинг коммутатора HPE 5710.
 * ***4.4 SNMP_Eltex*** - мониториинг коммутатора Eltex

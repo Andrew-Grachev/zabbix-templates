@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.0</version>
-    <date>2023-06-20T22:33:21Z</date>
+    <date>2023-06-23T23:36:38Z</date>
     <groups>
         <group>
             <name>2. Servers</name>
@@ -10,7 +10,7 @@
     <templates>
         <template>
             <template>Lenovo SNMPv3</template>
-            <name>2.5  SNMP_Lenovo 20.06.23</name>
+            <name>2.5  SNMPv3_Lenovo (24.06.23)</name>
             <description/>
             <groups>
                 <group>
@@ -43,8 +43,8 @@
             <items>
                 <item>
                     <name>currentSysPowerStatus</name>
-                    <type>1</type>
-                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <type>6</type>
+                    <snmp_community/>
                     <snmp_oid>.1.3.6.1.4.1.19046.11.1.5.1.1.0</snmp_oid>
                     <key>IMMcurrentSysPowerStatus</key>
                     <delay>5m</delay>
@@ -55,12 +55,12 @@
                     <allowed_hosts/>
                     <units/>
                     <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
+                    <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                    <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                    <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -68,7 +68,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMPV3_PORT}</port>
                     <description/>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -102,8 +102,8 @@
                 </item>
                 <item>
                     <name>PowerOnHours</name>
-                    <type>1</type>
-                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <type>6</type>
+                    <snmp_community/>
                     <snmp_oid>LENOVO-XCC-MIB:powerStatistics.2.0</snmp_oid>
                     <key>IMMpowerOnHours</key>
                     <delay>1h</delay>
@@ -114,12 +114,12 @@
                     <allowed_hosts/>
                     <units/>
                     <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                    <snmpv3_securitylevel>2</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
+                    <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -127,7 +127,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMPV3_PORT}</port>
                     <description/>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -161,8 +161,8 @@
                 </item>
                 <item>
                     <name>restartCount</name>
-                    <type>1</type>
-                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <type>6</type>
+                    <snmp_community/>
                     <snmp_oid>.1.3.6.1.4.1.19046.11.1.5.1.3.0</snmp_oid>
                     <key>IMMrestartCount</key>
                     <delay>1h</delay>
@@ -173,12 +173,12 @@
                     <allowed_hosts/>
                     <units/>
                     <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
+                    <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                    <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                    <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -186,7 +186,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMPV3_PORT}</port>
                     <description/>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -220,8 +220,8 @@
                 </item>
                 <item>
                     <name>System Health Status</name>
-                    <type>1</type>
-                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <type>6</type>
+                    <snmp_community/>
                     <snmp_oid>LENOVO-XCC-MIB:systemHealthStat.0</snmp_oid>
                     <key>IMMsystemHealthStat</key>
                     <delay>5m</delay>
@@ -232,12 +232,12 @@
                     <allowed_hosts/>
                     <units/>
                     <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
+                    <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                    <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                    <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -245,7 +245,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMPV3_PORT}</port>
                     <description/>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -281,8 +281,8 @@
                 </item>
                 <item>
                     <name>systemState</name>
-                    <type>1</type>
-                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <type>6</type>
+                    <snmp_community/>
                     <snmp_oid>.1.3.6.1.4.1.19046.11.1.5.1.4.0</snmp_oid>
                     <key>IMMsystemState</key>
                     <delay>5m</delay>
@@ -293,12 +293,12 @@
                     <allowed_hosts/>
                     <units/>
                     <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
+                    <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                    <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                    <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -306,7 +306,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMPV3_PORT}</port>
                     <description/>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -462,20 +462,20 @@
             <discovery_rules>
                 <discovery_rule>
                     <name>FAN Discovery</name>
-                    <type>1</type>
-                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <type>6</type>
+                    <snmp_community/>
                     <snmp_oid>discovery[{#FANDESCR},.1.3.6.1.4.1.19046.11.1.1.3.2.1.2]</snmp_oid>
                     <key>fan.discovery</key>
-                    <delay>1h</delay>
+                    <delay>1d</delay>
                     <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
+                    <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                    <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                    <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -483,7 +483,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMPV3_PORT}</port>
                     <filter>
                         <evaltype>0</evaltype>
                         <formula/>
@@ -494,11 +494,11 @@
                     <item_prototypes>
                         <item_prototype>
                             <name>{#FANDESCR}: Fan speed, %</name>
-                            <type>1</type>
-                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <type>6</type>
+                            <snmp_community/>
                             <snmp_oid>1.3.6.1.4.1.19046.11.1.1.3.2.1.3.{#SNMPINDEX}</snmp_oid>
                             <key>sensor.fan.speed.percentage[fanSpeed.{#SNMPINDEX}]</key>
-                            <delay>15m</delay>
+                            <delay>1h</delay>
                             <history>1w</history>
                             <trends>0</trends>
                             <status>0</status>
@@ -506,12 +506,12 @@
                             <allowed_hosts/>
                             <units/>
                             <snmpv3_contextname/>
-                            <snmpv3_securityname/>
-                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                            <snmpv3_privpassphrase/>
+                            <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                            <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                            <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                             <params/>
                             <ipmi_sensor/>
                             <authtype>0</authtype>
@@ -519,7 +519,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
-                            <port/>
+                            <port>{$SNMPV3_PORT}</port>
                             <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
@@ -558,20 +558,20 @@
                             <snmp_community/>
                             <snmp_oid>1.3.6.1.4.1.19046.11.1.1.3.2.1.10.{#SNMPINDEX}</snmp_oid>
                             <key>sensor.fan.status[fanHealthStatus.{#SNMPINDEX}]</key>
-                            <delay>3</delay>
-                            <history>7d</history>
+                            <delay>1h</delay>
+                            <history>1w</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>1</value_type>
                             <allowed_hosts/>
                             <units/>
                             <snmpv3_contextname/>
-                            <snmpv3_securityname>{$SNMP_SECNAME_CONTEXT}</snmpv3_securityname>
-                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                            <snmpv3_privpassphrase/>
+                            <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                            <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                            <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                             <params/>
                             <ipmi_sensor/>
                             <authtype>0</authtype>
@@ -579,7 +579,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
-                            <port/>
+                            <port>{$SNMPV3_PORT}</port>
                             <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
@@ -637,20 +637,20 @@
                 </discovery_rule>
                 <discovery_rule>
                     <name>Physical Disk Discovery</name>
-                    <type>1</type>
-                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <type>6</type>
+                    <snmp_community/>
                     <snmp_oid>discovery[{#SNMPVALUE},1.3.6.1.4.1.19046.11.1.1.12.2.1.1]</snmp_oid>
                     <key>physicalDisk.discovery</key>
-                    <delay>1h</delay>
+                    <delay>1d</delay>
                     <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
+                    <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                    <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                    <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -658,7 +658,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMPV3_PORT}</port>
                     <filter>
                         <evaltype>0</evaltype>
                         <formula/>
@@ -673,20 +673,20 @@
                             <snmp_community/>
                             <snmp_oid>1.3.6.1.4.1.19046.11.1.1.12.2.1.2.{#SNMPINDEX}</snmp_oid>
                             <key>system.hw.physicaldisk.part_number[diskFruName.{#SNMPINDEX}]</key>
-                            <delay>3600</delay>
-                            <history>7d</history>
+                            <delay>1h</delay>
+                            <history>1w</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>1</value_type>
                             <allowed_hosts/>
                             <units/>
                             <snmpv3_contextname/>
-                            <snmpv3_securityname>{$SNMP_SECNAME_CONTEXT}</snmpv3_securityname>
-                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                            <snmpv3_privpassphrase/>
+                            <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                            <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                            <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                             <params/>
                             <ipmi_sensor/>
                             <authtype>0</authtype>
@@ -694,9 +694,8 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
-                            <port/>
-                            <description>LENOVO-XCC-MIB&#13;
-disk module FRU name.</description>
+                            <port>{$SNMPV3_PORT}</port>
+                            <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
@@ -734,20 +733,20 @@ disk module FRU name.</description>
                             <snmp_community/>
                             <snmp_oid>1.3.6.1.4.1.19046.11.1.1.12.2.1.3.{#SNMPINDEX}</snmp_oid>
                             <key>system.hw.physicaldisk.status[diskHealthStatus.{#SNMPINDEX}]</key>
-                            <delay>180</delay>
-                            <history>7d</history>
+                            <delay>1h</delay>
+                            <history>1w</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>1</value_type>
                             <allowed_hosts/>
                             <units/>
                             <snmpv3_contextname/>
-                            <snmpv3_securityname>{$SNMP_SECNAME_CONTEXT}</snmpv3_securityname>
-                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                            <snmpv3_privpassphrase/>
+                            <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                            <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                            <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                             <params/>
                             <ipmi_sensor/>
                             <authtype>0</authtype>
@@ -755,7 +754,7 @@ disk module FRU name.</description>
                             <password/>
                             <publickey/>
                             <privatekey/>
-                            <port/>
+                            <port>{$SNMPV3_PORT}</port>
                             <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
@@ -831,20 +830,20 @@ Please check physical disk for warnings or errors</description>
                 </discovery_rule>
                 <discovery_rule>
                     <name>PSU Discovery</name>
-                    <type>1</type>
-                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <type>6</type>
+                    <snmp_community/>
                     <snmp_oid>discovery[{#PSU_DESCR},.1.3.6.1.4.1.19046.11.1.1.11.2.1.2]</snmp_oid>
                     <key>psu.discovery</key>
-                    <delay>1h</delay>
+                    <delay>1d</delay>
                     <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
+                    <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                    <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                    <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -852,7 +851,7 @@ Please check physical disk for warnings or errors</description>
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMPV3_PORT}</port>
                     <filter>
                         <evaltype>0</evaltype>
                         <formula/>
@@ -867,20 +866,20 @@ Please check physical disk for warnings or errors</description>
                             <snmp_community/>
                             <snmp_oid>1.3.6.1.4.1.19046.11.1.1.11.2.1.6.{#SNMPINDEX}</snmp_oid>
                             <key>sensor.psu.status[powerHealthStatus.{#SNMPINDEX}]</key>
-                            <delay>180</delay>
-                            <history>7d</history>
+                            <delay>1h</delay>
+                            <history>1w</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>1</value_type>
                             <allowed_hosts/>
                             <units/>
                             <snmpv3_contextname/>
-                            <snmpv3_securityname>{$SNMP_SECNAME_CONTEXT}</snmpv3_securityname>
-                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                            <snmpv3_privpassphrase/>
+                            <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                            <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                            <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                             <params/>
                             <ipmi_sensor/>
                             <authtype>0</authtype>
@@ -888,9 +887,8 @@ Please check physical disk for warnings or errors</description>
                             <password/>
                             <publickey/>
                             <privatekey/>
-                            <port/>
-                            <description>LENOVO-XCC-MIB&#13;
-A description of the power module status.</description>
+                            <port>{$SNMPV3_PORT}</port>
+                            <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
@@ -947,20 +945,20 @@ A description of the power module status.</description>
                 </discovery_rule>
                 <discovery_rule>
                     <name>Temperature Discovery</name>
-                    <type>1</type>
-                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <type>6</type>
+                    <snmp_community/>
                     <snmp_oid>discovery[{#SNMPVALUE},1.3.6.1.4.1.19046.11.1.1.1.2.1.2]</snmp_oid>
                     <key>tempDescr.discovery</key>
-                    <delay>1h</delay>
+                    <delay>1d</delay>
                     <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
+                    <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                    <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                    <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -968,7 +966,7 @@ A description of the power module status.</description>
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMPV3_PORT}</port>
                     <filter>
                         <evaltype>0</evaltype>
                         <formula/>
@@ -990,20 +988,20 @@ A description of the power module status.</description>
                             <snmp_community/>
                             <snmp_oid>1.3.6.1.4.1.19046.11.1.1.1.2.1.3.{#SNMPINDEX}</snmp_oid>
                             <key>sensor.temp.value[tempReading.{#SNMPINDEX}]</key>
-                            <delay>180</delay>
-                            <history>7d</history>
+                            <delay>1h</delay>
+                            <history>1w</history>
                             <trends>365d</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <allowed_hosts/>
                             <units>°C</units>
                             <snmpv3_contextname/>
-                            <snmpv3_securityname>{$SNMP_SECNAME_CONTEXT}</snmpv3_securityname>
-                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                            <snmpv3_privpassphrase/>
+                            <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                            <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                            <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                             <params/>
                             <ipmi_sensor/>
                             <authtype>0</authtype>
@@ -1011,7 +1009,7 @@ A description of the power module status.</description>
                             <password/>
                             <publickey/>
                             <privatekey/>
-                            <port/>
+                            <port>{$SNMPV3_PORT}</port>
                             <description>LENOVO-XCC-MIB&#13;
 The measured temperature.</description>
                             <inventory_link>0</inventory_link>
@@ -1088,20 +1086,20 @@ This trigger uses temperature sensor values as well as temperature sensor status
                 </discovery_rule>
                 <discovery_rule>
                     <name>Temperature Discovery Ambient</name>
-                    <type>1</type>
-                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <type>6</type>
+                    <snmp_community/>
                     <snmp_oid>discovery[{#SNMPVALUE},1.3.6.1.4.1.19046.11.1.1.1.2.1.2]</snmp_oid>
                     <key>tempDescr.discovery.ambient</key>
-                    <delay>1h</delay>
+                    <delay>1d</delay>
                     <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
+                    <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                    <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                    <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -1109,7 +1107,7 @@ This trigger uses temperature sensor values as well as temperature sensor status
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMPV3_PORT}</port>
                     <filter>
                         <evaltype>0</evaltype>
                         <formula/>
@@ -1131,20 +1129,20 @@ This trigger uses temperature sensor values as well as temperature sensor status
                             <snmp_community/>
                             <snmp_oid>1.3.6.1.4.1.19046.11.1.1.1.2.1.3.{#SNMPINDEX}</snmp_oid>
                             <key>sensor.temp.value[tempReading.Ambient.{#SNMPINDEX}]</key>
-                            <delay>180</delay>
-                            <history>90d</history>
+                            <delay>1h</delay>
+                            <history>1w</history>
                             <trends>365d</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <allowed_hosts/>
                             <units>°C</units>
                             <snmpv3_contextname/>
-                            <snmpv3_securityname>{$SNMP_SECNAME_CONTEXT}</snmpv3_securityname>
-                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                            <snmpv3_privpassphrase/>
+                            <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                            <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                            <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                             <params/>
                             <ipmi_sensor/>
                             <authtype>0</authtype>
@@ -1152,7 +1150,7 @@ This trigger uses temperature sensor values as well as temperature sensor status
                             <password/>
                             <publickey/>
                             <privatekey/>
-                            <port/>
+                            <port>{$SNMPV3_PORT}</port>
                             <description>LENOVO-XCC-MIB&#13;
 The measured temperature Ambient</description>
                             <inventory_link>0</inventory_link>
@@ -1229,20 +1227,20 @@ This trigger uses temperature sensor values as well as temperature sensor status
                 </discovery_rule>
                 <discovery_rule>
                     <name>Temperature Discovery CPU</name>
-                    <type>1</type>
-                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <type>6</type>
+                    <snmp_community/>
                     <snmp_oid>discovery[{#SNMPVALUE},1.3.6.1.4.1.19046.11.1.1.1.2.1.2]</snmp_oid>
                     <key>tempDescr.discovery.cpu</key>
-                    <delay>1h</delay>
+                    <delay>1d</delay>
                     <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
+                    <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                    <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                    <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -1250,7 +1248,7 @@ This trigger uses temperature sensor values as well as temperature sensor status
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMPV3_PORT}</port>
                     <filter>
                         <evaltype>0</evaltype>
                         <formula/>
@@ -1272,20 +1270,20 @@ This trigger uses temperature sensor values as well as temperature sensor status
                             <snmp_community/>
                             <snmp_oid>1.3.6.1.4.1.19046.11.1.1.1.2.1.3.{#SNMPINDEX}</snmp_oid>
                             <key>sensor.temp.value[tempReading.CPU.{#SNMPINDEX}]</key>
-                            <delay>180</delay>
-                            <history>7d</history>
+                            <delay>1h</delay>
+                            <history>1w</history>
                             <trends>365d</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <allowed_hosts/>
                             <units>°C</units>
                             <snmpv3_contextname/>
-                            <snmpv3_securityname>{$SNMP_SECNAME_CONTEXT}</snmpv3_securityname>
-                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                            <snmpv3_privpassphrase/>
+                            <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                            <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                            <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                             <params/>
                             <ipmi_sensor/>
                             <authtype>0</authtype>
@@ -1293,7 +1291,7 @@ This trigger uses temperature sensor values as well as temperature sensor status
                             <password/>
                             <publickey/>
                             <privatekey/>
-                            <port/>
+                            <port>{$SNMPV3_PORT}</port>
                             <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
@@ -1368,20 +1366,20 @@ This trigger uses temperature sensor values as well as temperature sensor status
                 </discovery_rule>
                 <discovery_rule>
                     <name>Voltage Discovery</name>
-                    <type>1</type>
-                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <type>6</type>
+                    <snmp_community/>
                     <snmp_oid>discovery[{#VOLTDESCR},1.3.6.1.4.1.19046.11.1.1.2.2.1.2]</snmp_oid>
                     <key>voltDescr.discovery</key>
-                    <delay>1h</delay>
+                    <delay>1d</delay>
                     <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
+                    <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                    <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                    <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -1389,7 +1387,7 @@ This trigger uses temperature sensor values as well as temperature sensor status
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMPV3_PORT}</port>
                     <filter>
                         <evaltype>0</evaltype>
                         <formula/>
@@ -1404,20 +1402,20 @@ This trigger uses temperature sensor values as well as temperature sensor status
                             <snmp_community/>
                             <snmp_oid>1.3.6.1.4.1.19046.11.1.1.2.2.1.11.{#SNMPINDEX}</snmp_oid>
                             <key>voltage.status[{#SNMPINDEX}]</key>
-                            <delay>180</delay>
-                            <history>7d</history>
+                            <delay>1h</delay>
+                            <history>1w</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>1</value_type>
                             <allowed_hosts/>
                             <units/>
                             <snmpv3_contextname/>
-                            <snmpv3_securityname>{$SNMP_SECNAME_CONTEXT}</snmpv3_securityname>
-                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                            <snmpv3_privpassphrase/>
+                            <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                            <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                            <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                             <params/>
                             <ipmi_sensor/>
                             <authtype>0</authtype>
@@ -1425,9 +1423,8 @@ This trigger uses temperature sensor values as well as temperature sensor status
                             <password/>
                             <publickey/>
                             <privatekey/>
-                            <port/>
-                            <description>LENOVO-XCC-MIB&#13;
-A description of the voltage component status.</description>
+                            <port>{$SNMPV3_PORT}</port>
+                            <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
@@ -1465,20 +1462,20 @@ A description of the voltage component status.</description>
                             <snmp_community/>
                             <snmp_oid>1.3.6.1.4.1.19046.11.1.1.2.2.1.3.{#SNMPINDEX}</snmp_oid>
                             <key>voltage[{#SNMPINDEX}]</key>
-                            <delay>180</delay>
-                            <history>7d</history>
+                            <delay>1h</delay>
+                            <history>1w</history>
                             <trends>365d</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <allowed_hosts/>
                             <units>V</units>
                             <snmpv3_contextname/>
-                            <snmpv3_securityname>{$SNMP_SECNAME_CONTEXT}</snmpv3_securityname>
-                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                            <snmpv3_privpassphrase/>
+                            <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                            <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                            <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                             <params/>
                             <ipmi_sensor/>
                             <authtype>0</authtype>
@@ -1486,9 +1483,8 @@ A description of the voltage component status.</description>
                             <password/>
                             <publickey/>
                             <privatekey/>
-                            <port/>
-                            <description>LENOVO-XCC-MIB&#13;
-The measured voltage.</description>
+                            <port>{$SNMPV3_PORT}</port>
+                            <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
@@ -1586,6 +1582,22 @@ The measured voltage.</description>
                 <macro>
                     <macro>{$PSU_OK_STATUS}</macro>
                     <value>Normal</value>
+                </macro>
+                <macro>
+                    <macro>{$SNMPV3_AUTHPASS}</macro>
+                    <value>P@ssw0rd</value>
+                </macro>
+                <macro>
+                    <macro>{$SNMPV3_PORT}</macro>
+                    <value>161</value>
+                </macro>
+                <macro>
+                    <macro>{$SNMPV3_PRIVATEPASS}</macro>
+                    <value>P@ssw0rd</value>
+                </macro>
+                <macro>
+                    <macro>{$SNMPV3_SECURITYNAME}</macro>
+                    <value>USERID</value>
                 </macro>
                 <macro>
                     <macro>{$TEMP_CRIT}</macro>
