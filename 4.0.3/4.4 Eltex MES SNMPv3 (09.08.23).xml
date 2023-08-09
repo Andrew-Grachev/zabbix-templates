@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.0</version>
-    <date>2023-06-20T18:50:37Z</date>
+    <date>2023-08-09T12:31:47Z</date>
     <groups>
         <group>
             <name>4. Networks</name>
@@ -9,219 +9,29 @@
     </groups>
     <templates>
         <template>
-            <template>4.1 ICMP_Ping</template>
-            <name>4.1 ICMP_Ping 20.06.23</name>
-            <description>Template Module ICMP Ping version: 0.12</description>
-            <groups>
-                <group>
-                    <name>4. Networks</name>
-                </group>
-            </groups>
-            <applications>
-                <application>
-                    <name>Status</name>
-                </application>
-            </applications>
-            <items>
-                <item>
-                    <name>ICMP ping</name>
-                    <type>3</type>
-                    <snmp_community/>
-                    <snmp_oid/>
-                    <key>icmpping</key>
-                    <delay>1m</delay>
-                    <history>1w</history>
-                    <trends>30d</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Status</name>
-                        </application>
-                    </applications>
-                    <valuemap>
-                        <name>Service state</name>
-                    </valuemap>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
-                    <status_codes>200</status_codes>
-                    <follow_redirects>1</follow_redirects>
-                    <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
-                    <retrieve_mode>0</retrieve_mode>
-                    <request_method>0</request_method>
-                    <output_format>0</output_format>
-                    <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
-                    <verify_peer>0</verify_peer>
-                    <verify_host>0</verify_host>
-                    <master_item/>
-                </item>
-                <item>
-                    <name>ICMP loss</name>
-                    <type>3</type>
-                    <snmp_community/>
-                    <snmp_oid/>
-                    <key>icmppingloss</key>
-                    <delay>1m</delay>
-                    <history>1w</history>
-                    <trends>30d</trends>
-                    <status>0</status>
-                    <value_type>0</value_type>
-                    <allowed_hosts/>
-                    <units>%</units>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Status</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
-                    <status_codes>200</status_codes>
-                    <follow_redirects>1</follow_redirects>
-                    <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
-                    <retrieve_mode>0</retrieve_mode>
-                    <request_method>0</request_method>
-                    <output_format>0</output_format>
-                    <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
-                    <verify_peer>0</verify_peer>
-                    <verify_host>0</verify_host>
-                    <master_item/>
-                </item>
-                <item>
-                    <name>ICMP response time</name>
-                    <type>3</type>
-                    <snmp_community/>
-                    <snmp_oid/>
-                    <key>icmppingsec</key>
-                    <delay>1m</delay>
-                    <history>1w</history>
-                    <trends>30d</trends>
-                    <status>0</status>
-                    <value_type>0</value_type>
-                    <allowed_hosts/>
-                    <units>s</units>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Status</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
-                    <status_codes>200</status_codes>
-                    <follow_redirects>1</follow_redirects>
-                    <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
-                    <retrieve_mode>0</retrieve_mode>
-                    <request_method>0</request_method>
-                    <output_format>0</output_format>
-                    <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
-                    <verify_peer>0</verify_peer>
-                    <verify_host>0</verify_host>
-                    <master_item/>
-                </item>
-            </items>
-            <discovery_rules/>
-            <httptests/>
-            <macros>
-                <macro>
-                    <macro>{$ICMP_LOSS_WARN}</macro>
-                    <value>20</value>
-                </macro>
-                <macro>
-                    <macro>{$ICMP_RESPONSE_TIME_WARN}</macro>
-                    <value>0.15</value>
-                </macro>
-            </macros>
-            <templates/>
-            <screens/>
-        </template>
-        <template>
-            <template>Eltex MES SNMPv2</template>
-            <name>4.4 SNMP_Eltex 20.06.23</name>
-            <description/>
+            <template>Eltex MES SNMPv3</template>
+            <name>4.4 Eltex MES SNMPv3 (09.08.23)</name>
+            <description>Например, для маршрутизаторов серии ESR, конфигурация выглядит следующим образом:&#13;
+snmp-server&#13;
+snmp-server user snmpv3vianame&#13;
+  access ro&#13;
+  authentication algorithm sha1&#13;
+  authentication access priv&#13;
+  authentication key ascii-text authv3sha&#13;
+  privacy algorithm aes128&#13;
+  privacy key ascii-text privv3aes&#13;
+  enable&#13;
+exit&#13;
+&#13;
+А для коммутаторов серии MES 23XX немного иначе:&#13;
+snmp-server server&#13;
+snmp-server engineID local default&#13;
+snmp-server group snmpv3group v3 auth&#13;
+snmp-server group snmpv3group v3 priv&#13;
+snmp-server user snmpv3user snmpv3group v3 auth sha authv3sha priv-protocol aes-128-cfb priv privv3aes&#13;
+&#13;
+После настройки проверим работоспособность протокола в консоли сервера мониторинга (пакеты snmp и snmp-mibs-downloader должны быть установлены):&#13;
+snmpwalk -v 3 -u snmpv3user -l authPriv -A authv3sha -a sha -x aes -X privv3aes 192.168.1.1 1.3.6</description>
             <groups>
                 <group>
                     <name>4. Networks</name>
@@ -651,8 +461,8 @@
                 </item>
                 <item>
                     <name>Serial number</name>
-                    <type>1</type>
-                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <type>6</type>
+                    <snmp_community/>
                     <snmp_oid>1.3.6.1.4.1.89.53.14.1.5.1</snmp_oid>
                     <key>rlPhdUnitGenParamSerialNum</key>
                     <delay>1d</delay>
@@ -663,12 +473,12 @@
                     <allowed_hosts/>
                     <units/>
                     <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
+                    <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                    <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                    <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -676,7 +486,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMP_PORT}</port>
                     <description/>
                     <inventory_link>8</inventory_link>
                     <applications>
@@ -710,8 +520,8 @@
                 </item>
                 <item>
                     <name>Device firmware</name>
-                    <type>1</type>
-                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <type>6</type>
+                    <snmp_community/>
                     <snmp_oid>1.3.6.1.4.1.89.2.4.0</snmp_oid>
                     <key>rndBrgVersion</key>
                     <delay>1h</delay>
@@ -722,12 +532,12 @@
                     <allowed_hosts/>
                     <units/>
                     <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
+                    <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                    <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                    <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -735,7 +545,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMP_PORT}</port>
                     <description/>
                     <inventory_link>5</inventory_link>
                     <applications>
@@ -1070,21 +880,21 @@
             </items>
             <discovery_rules>
                 <discovery_rule>
-                    <name>Network Interfaces</name>
-                    <type>1</type>
-                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
-                    <snmp_oid>discovery[{#SNMPVALUE},IF-MIB::ifName,{#IFALIAS},IF-MIB::ifAlias]</snmp_oid>
-                    <key>ifName</key>
+                    <name>Interface IF-MIB</name>
+                    <type>6</type>
+                    <snmp_community/>
+                    <snmp_oid>discovery[{#IFDESCR},IF-MIB::ifDescr,{#IFALIAS},IF-MIB::ifAlias,{#IFADMINSTATUS},IF-MIB::ifAdminStatus]</snmp_oid>
+                    <key>ifmib</key>
                     <delay>1h</delay>
                     <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
+                    <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                    <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                    <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -1092,7 +902,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMP_PORT}</port>
                     <filter>
                         <evaltype>0</evaltype>
                         <formula/>
@@ -1874,6 +1684,68 @@
                             <master_item/>
                         </item_prototype>
                         <item_prototype>
+                            <name>Статус {#IFDESCR}</name>
+                            <type>6</type>
+                            <snmp_community/>
+                            <snmp_oid>.1.3.6.1.2.1.2.2.1.8.{#SNMPINDEX}</snmp_oid>
+                            <key>ifOperStatus[{#IFDESCR}]</key>
+                            <delay>1m</delay>
+                            <history>1w</history>
+                            <trends>365d</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname>{$SNMPV3_SECURITYNAME}</snmpv3_securityname>
+                            <snmpv3_securitylevel>2</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>1</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase>{$SNMPV3_AUTHPASS}</snmpv3_authpassphrase>
+                            <snmpv3_privprotocol>1</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase>{$SNMPV3_PRIVATEPASS}</snmpv3_privpassphrase>
+                            <params/>
+                            <ipmi_sensor/>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Interfaces</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>SNMP interface status (ifOperStatus)</name>
+                            </valuemap>
+                            <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
+                            <application_prototypes/>
+                            <master_item/>
+                        </item_prototype>
+                        <item_prototype>
                             <name>Operational status of interface $1</name>
                             <type>1</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
@@ -2326,7 +2198,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <snmp_oid>1.3.6.1.2.1.2.2.1.5.{#SNMPINDEX}</snmp_oid>
                             <key>speed_on_[{#SNMPVALUE}]</key>
-                            <delay>1h</delay>
+                            <delay>1m</delay>
                             <history>1w</history>
                             <trends>365d</trends>
                             <status>0</status>
@@ -2390,7 +2262,7 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Eltex MES SNMPv2:ifInErrors[{#SNMPVALUE}].last()}&gt;0</expression>
+                            <expression>{Eltex MES SNMPv3:ifInErrors[{#SNMPVALUE}].last()}&gt;0</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
                             <name>Error IN {HOST.NAME} interface {#SNMPVALUE}</name>
@@ -2406,7 +2278,7 @@
                             <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Eltex MES SNMPv2:ifOutErrors[{#SNMPVALUE}].last()}&gt;0</expression>
+                            <expression>{Eltex MES SNMPv3:ifOutErrors[{#SNMPVALUE}].last()}&gt;0</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
                             <name>Error OUT {HOST.NAME} interface {#SNMPVALUE}</name>
@@ -2422,9 +2294,9 @@
                             <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Eltex MES SNMPv2:ifOperStatus[{#SNMPVALUE}].last(#1)}=1 &#13;
+                            <expression>{Eltex MES SNMPv3:ifOperStatus[{#SNMPVALUE}].last(#1)}=1 &#13;
 and &#13;
-{Eltex MES SNMPv2:ifOperStatus[{#SNMPVALUE}].last(#1)}&lt;&gt; {Eltex MES SNMPv2:ifOperStatus[{#SNMPVALUE}].last(#2)}</expression>
+{Eltex MES SNMPv3:ifOperStatus[{#SNMPVALUE}].last(#1)}&lt;&gt; {Eltex MES SNMPv3:ifOperStatus[{#SNMPVALUE}].last(#2)}</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
                             <name>Operational status was changed on {HOST.NAME} interface {#SNMPVALUE}</name>
@@ -2440,9 +2312,9 @@ and &#13;
                             <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Eltex MES SNMPv2:ifHCInOctets[{#SNMPVALUE}].avg(30m)}*0.000001&gt;{Eltex MES SNMPv2:speed_on_[{#SNMPVALUE}].last()}/2&#13;
+                            <expression>{Eltex MES SNMPv3:ifHCInOctets[{#SNMPVALUE}].avg(30m)}*0.000001&gt;{Eltex MES SNMPv3:speed_on_[{#SNMPVALUE}].last()}/2&#13;
 or&#13;
-{Eltex MES SNMPv2:ifHCOutOctets[{#SNMPVALUE}].avg(30m)}*0.000001&gt;{Eltex MES SNMPv2:speed_on_[{#SNMPVALUE}].last()}/2</expression>
+{Eltex MES SNMPv3:ifHCOutOctets[{#SNMPVALUE}].avg(30m)}*0.000001&gt;{Eltex MES SNMPv3:speed_on_[{#SNMPVALUE}].last()}/2</expression>
                             <recovery_mode>2</recovery_mode>
                             <recovery_expression/>
                             <name>Utilization &gt; 50% IN {HOST.NAME} interface {#SNMPVALUE} ({#IFNAME})</name>
@@ -2458,7 +2330,7 @@ or&#13;
                             <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Eltex MES SNMPv2:rlPhyTestGetResult.InPow[{#SNMPVALUE}].avg(30m)} &lt; {Eltex MES SNMPv2:rlPhyTestGetResult.OutPow[{#SNMPVALUE}].avg(30m)}</expression>
+                            <expression>{Eltex MES SNMPv3:rlPhyTestGetResult.InPow[{#SNMPVALUE}].avg(30m)} &lt; {Eltex MES SNMPv3:rlPhyTestGetResult.OutPow[{#SNMPVALUE}].avg(30m)}</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
                             <name>Потери мощности на оптической линии. Затухание на SFP порту {#SNMPVALUE}</name>
@@ -2501,7 +2373,7 @@ or&#13;
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Eltex MES SNMPv2</host>
+                                        <host>Eltex MES SNMPv3</host>
                                         <key>ifHCInBroadcastPkts[{#SNMPVALUE}]</key>
                                     </item>
                                 </graph_item>
@@ -2513,7 +2385,7 @@ or&#13;
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Eltex MES SNMPv2</host>
+                                        <host>Eltex MES SNMPv3</host>
                                         <key>ifHCInMulticastPkts[{#SNMPVALUE}]</key>
                                     </item>
                                 </graph_item>
@@ -2525,7 +2397,7 @@ or&#13;
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Eltex MES SNMPv2</host>
+                                        <host>Eltex MES SNMPv3</host>
                                         <key>ifHCInUcastPkts[{#SNMPVALUE}]</key>
                                     </item>
                                 </graph_item>
@@ -2537,7 +2409,7 @@ or&#13;
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Eltex MES SNMPv2</host>
+                                        <host>Eltex MES SNMPv3</host>
                                         <key>ifHCOutBroadcastPkts[{#SNMPVALUE}]</key>
                                     </item>
                                 </graph_item>
@@ -2549,7 +2421,7 @@ or&#13;
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Eltex MES SNMPv2</host>
+                                        <host>Eltex MES SNMPv3</host>
                                         <key>ifHCOutMulticastPkts[{#SNMPVALUE}]</key>
                                     </item>
                                 </graph_item>
@@ -2561,7 +2433,7 @@ or&#13;
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Eltex MES SNMPv2</host>
+                                        <host>Eltex MES SNMPv3</host>
                                         <key>ifHCOutUcastPkts[{#SNMPVALUE}]</key>
                                     </item>
                                 </graph_item>
@@ -2593,7 +2465,7 @@ or&#13;
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Eltex MES SNMPv2</host>
+                                        <host>Eltex MES SNMPv3</host>
                                         <key>rlPhyTestGetResult.InPow[{#SNMPVALUE}]</key>
                                     </item>
                                 </graph_item>
@@ -2605,7 +2477,7 @@ or&#13;
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Eltex MES SNMPv2</host>
+                                        <host>Eltex MES SNMPv3</host>
                                         <key>rlPhyTestGetResult.OutPow[{#SNMPVALUE}]</key>
                                     </item>
                                 </graph_item>
@@ -2617,7 +2489,7 @@ or&#13;
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Eltex MES SNMPv2</host>
+                                        <host>Eltex MES SNMPv3</host>
                                         <key>rlPhyTestGetResult.mA[{#SNMPVALUE}]</key>
                                     </item>
                                 </graph_item>
@@ -2629,7 +2501,7 @@ or&#13;
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Eltex MES SNMPv2</host>
+                                        <host>Eltex MES SNMPv3</host>
                                         <key>rlPhyTestGetResult.t[{#SNMPVALUE}]</key>
                                     </item>
                                 </graph_item>
@@ -2641,7 +2513,7 @@ or&#13;
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Eltex MES SNMPv2</host>
+                                        <host>Eltex MES SNMPv3</host>
                                         <key>rlPhyTestGetResult.v[{#SNMPVALUE}]</key>
                                     </item>
                                 </graph_item>
@@ -2673,7 +2545,7 @@ or&#13;
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Eltex MES SNMPv2</host>
+                                        <host>Eltex MES SNMPv3</host>
                                         <key>ifInErrors[{#SNMPVALUE}]</key>
                                     </item>
                                 </graph_item>
@@ -2685,7 +2557,7 @@ or&#13;
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Eltex MES SNMPv2</host>
+                                        <host>Eltex MES SNMPv3</host>
                                         <key>ifHCInOctets[{#SNMPVALUE}]</key>
                                     </item>
                                 </graph_item>
@@ -2697,7 +2569,7 @@ or&#13;
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Eltex MES SNMPv2</host>
+                                        <host>Eltex MES SNMPv3</host>
                                         <key>ifOutErrors[{#SNMPVALUE}]</key>
                                     </item>
                                 </graph_item>
@@ -2709,7 +2581,7 @@ or&#13;
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Eltex MES SNMPv2</host>
+                                        <host>Eltex MES SNMPv3</host>
                                         <key>ifHCOutOctets[{#SNMPVALUE}]</key>
                                     </item>
                                 </graph_item>
@@ -2738,7 +2610,24 @@ or&#13;
                 </discovery_rule>
             </discovery_rules>
             <httptests/>
-            <macros/>
+            <macros>
+                <macro>
+                    <macro>{$SNMPV3_AUTHPASS}</macro>
+                    <value>authv3sha</value>
+                </macro>
+                <macro>
+                    <macro>{$SNMPV3_PRIVATEPASS}</macro>
+                    <value>privv3aes</value>
+                </macro>
+                <macro>
+                    <macro>{$SNMPV3_SECURITYNAME}</macro>
+                    <value>snmpv3user</value>
+                </macro>
+                <macro>
+                    <macro>{$SNMP_PORT}</macro>
+                    <value>161</value>
+                </macro>
+            </macros>
             <templates>
                 <template>
                     <name>4.1 ICMP_Ping</name>
@@ -2749,9 +2638,9 @@ or&#13;
     </templates>
     <triggers>
         <trigger>
-            <expression>{Eltex MES SNMPv2:rlCpuUtilDuringLast5Minutes.last()}&gt;=70</expression>
+            <expression>{Eltex MES SNMPv3:rlCpuUtilDuringLast5Minutes.last()}&gt;=70</expression>
             <recovery_mode>1</recovery_mode>
-            <recovery_expression>{Eltex MES SNMPv2:rlCpuUtilDuringLast5Minutes.last()}&lt;70</recovery_expression>
+            <recovery_expression>{Eltex MES SNMPv3:rlCpuUtilDuringLast5Minutes.last()}&lt;70</recovery_expression>
             <name>{HOST.NAME} CPU Utilization 5min &gt; 70%</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
@@ -2765,75 +2654,10 @@ or&#13;
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Eltex MES SNMPv2:rlCpuUtilDuringLast5Minutes.last()}&gt;=80</expression>
+            <expression>{Eltex MES SNMPv3:rlCpuUtilDuringLast5Minutes.last()}&gt;=80</expression>
             <recovery_mode>1</recovery_mode>
-            <recovery_expression>{Eltex MES SNMPv2:rlCpuUtilDuringLast5Minutes.last()}&lt;80</recovery_expression>
+            <recovery_expression>{Eltex MES SNMPv3:rlCpuUtilDuringLast5Minutes.last()}&lt;80</recovery_expression>
             <name>{HOST.NAME} CPU Utilization 5min &gt; 80%</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
-            <url/>
-            <status>0</status>
-            <priority>4</priority>
-            <description/>
-            <type>0</type>
-            <manual_close>0</manual_close>
-            <dependencies/>
-            <tags/>
-        </trigger>
-        <trigger>
-            <expression>{4.1 ICMP_Ping:icmppingloss.min(5m)}&gt;{$ICMP_LOSS_WARN} and {4.1 ICMP_Ping:icmppingloss.min(5m)}&lt;100</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
-            <name>Высокая потеря ping к хосту {HOST.CONN}</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
-            <url/>
-            <status>0</status>
-            <priority>2</priority>
-            <description/>
-            <type>0</type>
-            <manual_close>0</manual_close>
-            <dependencies>
-                <dependency>
-                    <name>Отсутствует ping к хосту {HOST.CONN}</name>
-                    <expression>{4.1 ICMP_Ping:icmpping.max(#3)}=0</expression>
-                    <recovery_expression/>
-                </dependency>
-            </dependencies>
-            <tags/>
-        </trigger>
-        <trigger>
-            <expression>{4.1 ICMP_Ping:icmppingsec.avg(5m)}&gt;{$ICMP_RESPONSE_TIME_WARN}</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
-            <name>Высокое время отклика ping к хосту {HOST.CONN}</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
-            <url/>
-            <status>0</status>
-            <priority>2</priority>
-            <description/>
-            <type>0</type>
-            <manual_close>0</manual_close>
-            <dependencies>
-                <dependency>
-                    <name>Высокая потеря ping к хосту {HOST.CONN}</name>
-                    <expression>{4.1 ICMP_Ping:icmppingloss.min(5m)}&gt;{$ICMP_LOSS_WARN} and {4.1 ICMP_Ping:icmppingloss.min(5m)}&lt;100</expression>
-                    <recovery_expression/>
-                </dependency>
-                <dependency>
-                    <name>Отсутствует ping к хосту {HOST.CONN}</name>
-                    <expression>{4.1 ICMP_Ping:icmpping.max(#3)}=0</expression>
-                    <recovery_expression/>
-                </dependency>
-            </dependencies>
-            <tags/>
-        </trigger>
-        <trigger>
-            <expression>{4.1 ICMP_Ping:icmpping.max(#3)}=0</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
-            <name>Отсутствует ping к хосту {HOST.CONN}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -2873,7 +2697,7 @@ or&#13;
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Eltex MES SNMPv2</host>
+                        <host>Eltex MES SNMPv3</host>
                         <key>rlCpuUtilDuringLastMinute</key>
                     </item>
                 </graph_item>
@@ -2885,7 +2709,7 @@ or&#13;
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Eltex MES SNMPv2</host>
+                        <host>Eltex MES SNMPv3</host>
                         <key>rlCpuUtilDuringLastSecond</key>
                     </item>
                 </graph_item>
@@ -2897,40 +2721,8 @@ or&#13;
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Eltex MES SNMPv2</host>
+                        <host>Eltex MES SNMPv3</host>
                         <key>rlCpuUtilDuringLast5Minutes</key>
-                    </item>
-                </graph_item>
-            </graph_items>
-        </graph>
-        <graph>
-            <name>ICMP ping response time</name>
-            <width>900</width>
-            <height>200</height>
-            <yaxismin>0.0000</yaxismin>
-            <yaxismax>100.0000</yaxismax>
-            <show_work_period>1</show_work_period>
-            <show_triggers>1</show_triggers>
-            <type>0</type>
-            <show_legend>1</show_legend>
-            <show_3d>0</show_3d>
-            <percent_left>0.0000</percent_left>
-            <percent_right>0.0000</percent_right>
-            <ymin_type_1>0</ymin_type_1>
-            <ymax_type_1>0</ymax_type_1>
-            <ymin_item_1>0</ymin_item_1>
-            <ymax_item_1>0</ymax_item_1>
-            <graph_items>
-                <graph_item>
-                    <sortorder>0</sortorder>
-                    <drawtype>5</drawtype>
-                    <color>1A7C11</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
-                    <item>
-                        <host>4.1 ICMP_Ping</host>
-                        <key>icmppingsec</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -2961,7 +2753,7 @@ or&#13;
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Eltex MES SNMPv2</host>
+                        <host>Eltex MES SNMPv3</host>
                         <key>eltexProcessMemoryFreePercent</key>
                     </item>
                 </graph_item>
@@ -2993,7 +2785,7 @@ or&#13;
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Eltex MES SNMPv2</host>
+                        <host>Eltex MES SNMPv3</host>
                         <key>rlEnvFanDataTemp</key>
                     </item>
                 </graph_item>
@@ -3023,19 +2815,6 @@ or&#13;
             </mappings>
         </value_map>
         <value_map>
-            <name>Service state</name>
-            <mappings>
-                <mapping>
-                    <value>0</value>
-                    <newvalue>Down</newvalue>
-                </mapping>
-                <mapping>
-                    <value>1</value>
-                    <newvalue>Up</newvalue>
-                </mapping>
-            </mappings>
-        </value_map>
-        <value_map>
             <name>SNMP interface status (ifAdminStatus)</name>
             <mappings>
                 <mapping>
@@ -3049,6 +2828,39 @@ or&#13;
                 <mapping>
                     <value>3</value>
                     <newvalue>testing</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+        <value_map>
+            <name>SNMP interface status (ifOperStatus)</name>
+            <mappings>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>up</newvalue>
+                </mapping>
+                <mapping>
+                    <value>2</value>
+                    <newvalue>down</newvalue>
+                </mapping>
+                <mapping>
+                    <value>3</value>
+                    <newvalue>testing</newvalue>
+                </mapping>
+                <mapping>
+                    <value>4</value>
+                    <newvalue>unknown</newvalue>
+                </mapping>
+                <mapping>
+                    <value>5</value>
+                    <newvalue>dormant</newvalue>
+                </mapping>
+                <mapping>
+                    <value>6</value>
+                    <newvalue>notPresent</newvalue>
+                </mapping>
+                <mapping>
+                    <value>7</value>
+                    <newvalue>lowerLayerDown</newvalue>
                 </mapping>
             </mappings>
         </value_map>
