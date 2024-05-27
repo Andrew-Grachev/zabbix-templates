@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.0</version>
-    <date>2023-06-23T23:36:38Z</date>
+    <date>2023-12-21T09:33:48Z</date>
     <groups>
         <group>
             <name>2. Servers</name>
@@ -10,7 +10,7 @@
     <templates>
         <template>
             <template>Lenovo SNMPv3</template>
-            <name>2.5  SNMPv3_Lenovo (24.06.23)</name>
+            <name>2.5  SNMPv3_Lenovo (21.12.23)</name>
             <description/>
             <groups>
                 <group>
@@ -404,7 +404,7 @@
                     <type>17</type>
                     <snmp_community/>
                     <snmp_oid/>
-                    <key>snmptrap[&quot;General&quot;]</key>
+                    <key>snmptrap[&quot;System&quot;]</key>
                     <delay>0</delay>
                     <history>1w</history>
                     <trends>0</trends>
@@ -493,7 +493,7 @@
                     <description/>
                     <item_prototypes>
                         <item_prototype>
-                            <name>{#FANDESCR}: Fan speed, %</name>
+                            <name>{#FANDESCR}: Скорость вентилятора, % от максимума</name>
                             <type>6</type>
                             <snmp_community/>
                             <snmp_oid>1.3.6.1.4.1.19046.11.1.1.3.2.1.3.{#SNMPINDEX}</snmp_oid>
@@ -613,7 +613,24 @@
                             <master_item/>
                         </item_prototype>
                     </item_prototypes>
-                    <trigger_prototypes/>
+                    <trigger_prototypes>
+                        <trigger_prototype>
+                            <expression>{Lenovo SNMPv3:sensor.fan.status[fanHealthStatus.{#SNMPINDEX}].last(#2)}=0</expression>
+                            <recovery_mode>0</recovery_mode>
+                            <recovery_expression/>
+                            <name>{#FANDESCR}: Проблема!</name>
+                            <correlation_mode>0</correlation_mode>
+                            <correlation_tag/>
+                            <url/>
+                            <status>0</status>
+                            <priority>2</priority>
+                            <description/>
+                            <type>0</type>
+                            <manual_close>0</manual_close>
+                            <dependencies/>
+                            <tags/>
+                        </trigger_prototype>
+                    </trigger_prototypes>
                     <graph_prototypes/>
                     <host_prototypes/>
                     <jmx_endpoint/>
@@ -1585,7 +1602,7 @@ This trigger uses temperature sensor values as well as temperature sensor status
                 </macro>
                 <macro>
                     <macro>{$SNMPV3_AUTHPASS}</macro>
-                    <value>P@ssw0rd</value>
+                    <value>1234567890aA</value>
                 </macro>
                 <macro>
                     <macro>{$SNMPV3_PORT}</macro>
@@ -1593,7 +1610,7 @@ This trigger uses temperature sensor values as well as temperature sensor status
                 </macro>
                 <macro>
                     <macro>{$SNMPV3_PRIVATEPASS}</macro>
-                    <value>P@ssw0rd</value>
+                    <value>1234567890aA</value>
                 </macro>
                 <macro>
                     <macro>{$SNMPV3_SECURITYNAME}</macro>
